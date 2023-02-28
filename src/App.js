@@ -5,6 +5,9 @@ import logo1 from './assets/img/Logo2.png'
 import aboutHistory from './assets/img/about-history.jpg'
 import aboutVisual from './assets/img/about-visual.png'
 import introductionVisual from './assets/img/introduction-visual.png'
+import Navbar from './Pages/Navbar';
+import Home from './Pages/Home';
+import Work from './Pages/Work';
 
 
 
@@ -24,7 +27,8 @@ function App() {
 
   
   return (
-    <div className="App">
+    <div>
+      
       
      
 <div className="device-notification">
@@ -49,84 +53,13 @@ function App() {
             <span></span>
           </div>
         </header>
-        <nav className="l-side-nav">
-          <ul className="side-nav">
-            <li className="is-active"><span>Home</span></li>
-            <li><span>Works</span></li>
-            <li><span>About</span></li>
-            <li><span>Contact</span></li>
-            <li><span>Hire us</span></li>
-          </ul>
-        </nav>
+        <Navbar/>
+        
+        
         <ul className="l-main-content main-content">
-          <li className="l-section section section--is-active">
-            <div className="intro">
-              <div className="intro--banner">
-                <h1>Your next<br/>interactive<br/>experience</h1>
-                <button className="cta">Hire Us
-                  
-                  <span className="btn-background"></span>
-                </button>
-                <img src={introductionVisual} alt="Welcome"/>
-              </div>
-              <div className="intro--options">
-                <a href="#0">
-                  <h3>Metiew &amp; Smith</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Fantasy interactive</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Paul &amp; shark</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li className="l-section section">
-            <div className="work">
-              <h2>Selected work</h2>
-              <div className="work--lockup">
-                <ul className="slider">
-                  <li className="slider--item slider--item-left">
-                    <a href="#0">
-                      <div className="slider--item-image">
-                        <img src="assets/img/work-victory.jpg" alt="Victory"/>
-                      </div>
-                      <p className="slider--item-title">Victory</p>
-                      <p className="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li className="slider--item slider--item-center">
-                    <a href="#0">
-                      <div className="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith"/>
-                      </div>
-                      <p className="slider--item-title">Metiew &amp; Smith</p>
-                      <p className="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li className="slider--item slider--item-right">
-                    <a href="#0">
-                      <div className="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak"/>
-                      </div>
-                      <p className="slider--item-title">Alex Nowak</p>
-                      <p className="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div className="slider--prev">
-                 
-                </div>
-                <div className="slider--next">
-                  
-                </div>
-              </div>
-            </div>
-          </li>
+        
+          <Work/>
+         
           <li className="l-section section">
             <div className="about">
               <div className="about--banner">
